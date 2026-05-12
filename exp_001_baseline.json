@@ -1,0 +1,18 @@
+{
+  "experiment_id": "exp_001_baseline_zero_shot",
+  "date": "2026-05-12T09:23:54.377052",
+  "model": "MCG-NJU/videomae-base-finetuned-kinetics",
+  "dataset": "WLASL2000",
+  "num_videos_tested": 20,
+  "metrics": {
+    "sign_language_top5_detection": 0.85,
+    "sign_language_top5_percentage": 85.0,
+    "outlier_predictions": [
+      "answering questions",
+      "tai chi",
+      "stretching arm"
+    ]
+  },
+  "observation": "Pretrained Kinetics-400 model shows strong bias toward 'sign language interpreting' category for WLASL videos without any fine-tuning. This indicates excellent transfer learning potential.",
+  "next_step": "Fine-tune the model on WLASL training set to recognize specific signs (not just 'sign language' category)"
+}

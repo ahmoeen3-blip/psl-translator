@@ -1,0 +1,31 @@
+{
+  "experiment_id": "exp_002_finetune_10class",
+  "date": "2026-05-12T09:37:59.985032",
+  "approach": "Feature extraction + Linear classifier",
+  "backbone": "VideoMAE-base-Kinetics (frozen)",
+  "classifier": "MLP (768 \u2192 256 \u2192 10)",
+  "dataset": "WLASL2000 top-10 classes subset",
+  "num_classes": 10,
+  "train_samples": 200,
+  "val_samples": 44,
+  "epochs": 30,
+  "metrics": {
+    "random_baseline": 10.0,
+    "final_train_accuracy": 100.0,
+    "final_val_accuracy": 50.0,
+    "best_val_accuracy": 52.3,
+    "improvement_over_random": "5.2x"
+  },
+  "observations": [
+    "Strong overfitting observed: train-val gap of ~50%",
+    "Likely cause: small training set (200 samples, 20 per class)",
+    "Feature extraction approach validates: VideoMAE features are informative",
+    "Need: data augmentation, regularization, or more data"
+  ],
+  "next_steps": [
+    "Add data augmentation (random frame sampling, horizontal flip)",
+    "Increase dropout (0.3 \u2192 0.5)",
+    "Try regularization (weight decay tuning)",
+    "Eventually: scale to 100 classes for better generalization"
+  ]
+}
