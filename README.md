@@ -77,3 +77,42 @@ MIT License — see [LICENSE](LICENSE) file for details.
 - WLASL Dataset by [Dongxu Li et al.](https://dxli94.github.io/WLASL/)
 - VideoMAE by [MCG-NJU](https://github.com/MCG-NJU/VideoMAE)
 - Project mentor: Claude (Anthropic)
+- ## 🚀 Roadmap
+
+- [x] **Phase 1: Setup & Baselines** (Day 1-4)
+  - [x] Environment setup, GPU configuration
+  - [x] WLASL dataset acquisition
+  - [x] Zero-shot baseline establishment
+- [x] **Phase 2: Fine-tuning** (Day 5-10)
+  - [x] Feature extraction approach
+  - [x] Custom classifier training
+  - [x] Augmentation strategies
+  - [x] End-to-end fine-tuning (65.1% val)
+- [ ] **Phase 3: Scale up** (Day 11-20)
+  - [ ] WLASL-100 classes
+  - [ ] WLASL-300 classes
+  - [ ] Top-5 accuracy reporting
+- [ ] **Phase 4: PSL Transfer** (Day 21-35)
+  - [ ] PSL data collection (YouTube + community)
+  - [ ] Cross-lingual transfer learning
+  - [ ] PSL-specific augmentation
+- [ ] **Phase 5: Deployment** (Day 36-60)
+  - [ ] Live web demo (Hugging Face Spaces)
+  - [ ] Real-time inference optimization
+  - [ ] Workshop paper draft
+
+## 👤 Author
+
+**Moeen Ahmad**
+- GitHub: [@ahmoeen3-blip](https://github.com/ahmoeen3-blip)
+- Working on: Pakistan Sign Language recognition using deep learning
+
+## 📜 License
+
+MIT License — see [LICENSE](LICENSE) file for details.
+
+## 🤝 Acknowledgments
+
+- WLASL Dataset by [Dongxu Li et al.](https://dxli94.github.io/WLASL/)
+- VideoMAE by [MCG-NJU](https://github.com/MCG-NJU/VideoMAE)
+- Project mentor: Claude (Anthropic)
